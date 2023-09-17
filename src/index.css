@@ -17,3 +17,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-main{
+  width: 450px;
+  height: 500px;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+
+.sidebar-upper{
+  border-bottom: 1px solid lightslategrey;
+  height: 20%;
+  display: flex;
+}
+
+.sidebar-upper-left{
+  width: 88%;
+  border-right: 1px solid lightslategrey;
+}
+
+.sidebar-upper-right{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 12px;
+}
+
+.logo-1{
+  padding-bottom: 14px;
+}
