@@ -29,19 +29,24 @@ code {
 .sidebar-main{
   width: 450px;
   height: 500px;
-  background-color: blueviolet;
-  border-radius: 10px;
+  /* background-color: blueviolet; */
+  /* border-radius: 12px; */
 }
 
 .sidebar-upper{
   border-bottom: 1px solid lightslategrey;
   height: 20%;
   display: flex;
+  background-color: #3d3d3d;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .sidebar-upper-left{
   width: 88%;
   border-right: 1px solid lightslategrey;
+  padding: 15px;
 }
 
 .sidebar-upper-right{
@@ -50,6 +55,35 @@ code {
   padding: 15px 12px;
 }
 
+.logo{
+  font-size: 24px;
+}
+
+.logo-left{
+  padding-right: 12px;
+}
+
 .logo-1{
   padding-bottom: 14px;
+}
+
+.sidebar-upper-left-1{
+  font-size: large;
+}
+
+.sidebar-upper-left-2{
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.sidebar-upper-left-3{
+  display: flex;
+}
+
+.sidebar-lower{
+  background-color: #181818;
+  height: 80%;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
