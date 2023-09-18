@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
 
+  let channelTitle = '';
   const [videos, setVideos] = useState([]);
 
   const getData = async () => {
@@ -11,16 +12,21 @@ function App() {
     const data = await apiCall.json();
     console.log(data.items);
     setVideos(data.items);
+
+    if(data.items && data.items.length > 0){
+      channelTitle = data.items[0].snippet.channelTitle;
+    }
+    console.log(channelTitle);
   }
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="app">
-      {/* {videos.map((curr) => <a href={`https://www.youtube.com/watch?v=${curr.snippet.resourceId.videoId}`}>{curr.snippet.resourceId.videoId}</a>)}
-      {videos.map((curr) => <img src={curr.snippet.thumbnails.default.url} />)} */}
+      {/* {videos.map((curr) => <a href={`https://www.youtube.com/watch?v=${curr.snippet.resourceId.videoId}`}>{curr.snippet.resourceId.videoId}</a>)} */}
+      
 
       <Sidebar />
     </div>
