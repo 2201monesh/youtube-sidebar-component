@@ -4,13 +4,13 @@ import { LuMoreVertical } from 'react-icons/lu';
 import { TiArrowShuffle } from 'react-icons/ti';
 import { TbArrowsRightLeft } from 'react-icons/tb';
 
-function Sidebar({videos}) {
+function Sidebar({channelTitle}) {
   return (
     <div className='sidebar-main'>
       <div className="sidebar-upper">
         <div className="sidebar-upper-left">
-            <div className="sidebar-upper-left-1">Main heading goes here</div>
-            <div className="sidebar-upper-left-2">Sub heading goes here</div>
+            <div className="sidebar-upper-left-1">Latest 30 videos of Tanmay Bhat</div>
+            <div className="sidebar-upper-left-2">{channelTitle}</div>
             <div className="sidebar-upper-left-3">
                 <p className='logo logo-left'><TbArrowsRightLeft /></p>
                 <p className='logo logo-left' ><TiArrowShuffle /></p>
