@@ -32,7 +32,7 @@ code {
 }
 
 .sidebar-upper{
-  border-bottom: 1px solid lightslategrey;
+  /* border-bottom: 1px solid lightslategrey; */
   height: 20%;
   display: flex;
   background-color: #3d3d3d;
@@ -43,18 +43,19 @@ code {
 
 .sidebar-upper-left{
   width: 88%;
-  border-right: 1px solid lightslategrey;
+  /* border-right: 1px solid lightslategrey; */
   padding: 15px;
 }
 
 .sidebar-upper-right{
   display: flex;
   flex-direction: column;
-  padding: 15px 12px;
+  padding: 25px 12px;
 }
 
 .logo{
   font-size: 24px;
+  cursor: pointer;
 }
 
 .logo-left{
@@ -133,4 +134,14 @@ code {
   font-weight: 500;
   height: 65%;
   padding-top: 4px;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 8px;
 }
