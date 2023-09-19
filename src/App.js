@@ -27,6 +27,8 @@ function App() {
   return (
     <div className="app">
       {/* {videos.map((curr) => <a href={`https://www.youtube.com/watch?v=${curr.snippet.resourceId.videoId}`}>{curr.snippet.resourceId.videoId}</a>)} */}
+
+      {/* {videos.map((curr) => <img src={curr.snippet.thumbnails.default} alt="image" /> )} */}
       
 
       <Sidebar videos={videos} channelTitle={channelTitle} />

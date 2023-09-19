@@ -106,10 +106,15 @@ code {
 }
 
 .image{
-  background-color: #3d3d3d;
+  /* background-color: #3d3d3d; */
   width: 100px;
   height: 60px;
   border-radius: 8px;
+}
+
+.image img{
+  width: 100px;
+  height: 60px;
 }
 
 .playlist-info{
