@@ -87,4 +87,31 @@ code {
   color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  overflow-y: scroll;
+}
+
+.playlist-card{
+  width: 100%;
+  border-bottom: 1px solid lightslategray;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.serial-number{
+  width: 5%;
+  padding-right: 8px;
+  font-size: small;
+}
+
+.image{
+  background-color: #3d3d3d;
+  width: 100px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.playlist-info{
+  padding-left: 8px;
 }

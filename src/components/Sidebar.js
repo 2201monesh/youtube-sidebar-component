@@ -5,7 +5,7 @@ import { TiArrowShuffle } from 'react-icons/ti';
 import { TbArrowsRightLeft } from 'react-icons/tb';
 import PlaylistCard from './PlaylistCard';
 
-function Sidebar({channelTitle}) {
+function Sidebar({channelTitle, videos}) {
   return (
     <div className='sidebar-main'>
       <div className="sidebar-upper">
@@ -25,7 +25,11 @@ function Sidebar({channelTitle}) {
       </div>
 
 
-      <div className="sidebar-lower"><PlaylistCard /></div>
+      <div className="sidebar-lower">
+        {videos.map((item) => (
+          <PlaylistCard serial={item.snippet.position} />
+        ))}
+      </div>
     </div>
   )
 }

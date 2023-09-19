@@ -20,16 +20,16 @@ function App() {
 
   console.log(channelTitle);
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="app">
       {/* {videos.map((curr) => <a href={`https://www.youtube.com/watch?v=${curr.snippet.resourceId.videoId}`}>{curr.snippet.resourceId.videoId}</a>)} */}
       
 
-      <Sidebar channelTitle={channelTitle} />
+      <Sidebar videos={videos} channelTitle={channelTitle} />
     </div>
   );
 }
