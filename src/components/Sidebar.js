@@ -27,7 +27,7 @@ function Sidebar({channelTitle, videos}) {
 
       <div className="sidebar-lower">
         {videos.map((item) => (
-          <PlaylistCard image={item.snippet.thumbnails.default.url} serial={item.snippet.position} />
+          <PlaylistCard title={item.snippet.title} channelTitle={channelTitle} image={item.snippet.thumbnails.default.url} serial={item.snippet.position} />
         ))}
       </div>
     </div>
