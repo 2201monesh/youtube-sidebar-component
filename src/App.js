@@ -20,9 +20,9 @@ function App() {
 
   console.log(channelTitle);
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <div className="app">

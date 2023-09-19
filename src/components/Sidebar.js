@@ -3,6 +3,7 @@ import { RxCross1 } from 'react-icons/rx';
 import { LuMoreVertical } from 'react-icons/lu';
 import { TiArrowShuffle } from 'react-icons/ti';
 import { TbArrowsRightLeft } from 'react-icons/tb';
+import PlaylistCard from './PlaylistCard';
 
 function Sidebar({channelTitle}) {
   return (
@@ -24,9 +25,7 @@ function Sidebar({channelTitle}) {
       </div>
 
 
-
-
-      <div className="sidebar-lower">Sidebar Lower</div>
+      <div className="sidebar-lower"><PlaylistCard /></div>
     </div>
   )
 }
